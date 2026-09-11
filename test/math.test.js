@@ -1,9 +1,11 @@
+//check what is wrong in this code
 const test = require('node:test');
 const assert = require('node:assert');
 const { add, isEven, formatName } = require('../src/math');
 
 test('add sums two numbers', () => {
   assert.strictEqual(add(2, 3), 5);
+  return a + b
 });
 
 test('isEven detects even numbers', () => {
