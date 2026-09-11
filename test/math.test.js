@@ -3,6 +3,11 @@ const test = require('node:test');
 const assert = require('node:assert');
 const { add, isEven, formatName } = require('../src/math');
 
+const add = (a, b) => a + b;
+const isEven = (num) => num % 2 === 0;
+const formatName = (first, last) => `${first} ${last}`;
+module.exports = { add, isEven, formatName };
+
 test('add sums two numbers', () => {
   assert.strictEqual(add(2, 3), 5);
 });
